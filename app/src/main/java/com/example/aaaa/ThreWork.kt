@@ -11,7 +11,7 @@ class ThreWork : AppCompatActivity() {
         setContentView(R.layout.activity_thre_work)
     }
 
-    fun onClick(view: View) {
+    fun onClickThre(view: View) {
         val intent = Intent(this, MainActivityFore::class.java)
         startActivity(intent)
 

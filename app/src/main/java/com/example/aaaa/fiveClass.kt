@@ -10,4 +10,9 @@ class fiveClass : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_five_class)
     }
+
+    fun onClickFive(view: View) {
+        val intent = Intent(this, activSix::class.java)
+        startActivity(intent)
+    }
 }

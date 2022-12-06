@@ -10,9 +10,8 @@ class MainActivityFore : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_fore)
     }
-    fun onClick(view: View){
+    fun onClickFore(view: View){
         val intent = Intent(this, fiveClass::class.java)
         startActivity(intent)
-
     }
 }
