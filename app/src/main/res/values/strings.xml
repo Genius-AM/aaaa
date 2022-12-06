@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">aaaa</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Добро пожаловать</string>
+    <string name="second_fragment_label">Условия</string>
+    <string name="next">Погнали</string>
+    <string name="previous">Ознакомлен</string>
+    <string name="confidet">Не является профисиональным тренером, перед тренировкой обязательно размятся</string>
+    <string name="title_activity_one_work"></string>
+    <string name="title_activity_two_work">hi</string>
+    <string name="start">Начать</string>
+    <string name="stop">Остановить</string>
+    <string name="oneWork">Ходьба в планку с касанием плеч</string>
+    <string name="twoWork">Присед + отведение ноги в сторону</string>
+    <string name="thriWork">Ходьба в планку с касанием плеч</string>
+    <string name="fowrWork">Ходьба в планку с касанием плеч</string>
+
+    <string name="hello_first_fragment">Настя тренировки</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
