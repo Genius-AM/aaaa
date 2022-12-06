@@ -30,4 +30,21 @@
         android:name="com.example.aaaa.OneWork"
         android:label="activity_one_work"
         tools:layout="@layout/activity_one_work" />
+    <fragment
+
+        android:id="@+id/twoWork"
+        android:name="com.example.aaaa.TwoWork"
+        android:label="activity_two_work"
+        tools:layout="@layout/activity_two_work">
+        <action
+            android:id="@+id/activity_thre_work"
+            app:destination="@id/threWork" />
+
+    </fragment>
+    <activity
+        android:id="@+id/threWork"
+        android:name="com.example.aaaa.ThreWork"
+        android:label="activity_thre_work"
+        tools:layout="@layout/activity_thre_work" />
+
 </navigation>

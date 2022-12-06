@@ -13,6 +13,27 @@
         android:theme="@style/Theme.Aaaa"
         tools:targetApi="31">
         <activity
+            android:name=".fiveClass"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivityFore"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ThreWork"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".TwoWork"
             android:exported="false"
             android:label="@string/title_activity_two_work">

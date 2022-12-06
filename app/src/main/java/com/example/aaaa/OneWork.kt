@@ -4,7 +4,9 @@ import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.view.View
 import com.example.aaaa.databinding.ActivityOneWorkBinding
+import android.content.Intent as Intent
 
 class OneWork : AppCompatActivity() {
     private lateinit var binding: ActivityOneWorkBinding
@@ -15,38 +17,11 @@ class OneWork : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityOneWorkBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.apply {
-            bStart.setOnClickListener {
-                startCountDownTimer(40000)
-            }
-            bStop.setOnClickListener {
-                 stopCountDownTimer()
-            }
-        }
     }
 
-    private fun startCountDownTimer(timeMillis: Long) {
+    fun onClick(view: View) {
+        val intent = Intent(this, TwoWork::class.java)
+        startActivity(intent)
 
-        timer = object : CountDownTimer(timeMillis, 10) {
-            override fun onTick(timeM: Long) {
-                binding.tvTimer.text = timeM.toString()
-            }
-
-            override fun onFinish() {
-                setContentView(R.layout.activity_two_work)
-            }
-        }.start()
     }
-
-    private fun nextStartWork() {
-        this.startCountDownTimer(20000)
-
-        setContentView(R.layout.fragment_first)
-    }
-
-    private fun stopCountDownTimer() {
-        timer?.cancel()
-    }
-
 }

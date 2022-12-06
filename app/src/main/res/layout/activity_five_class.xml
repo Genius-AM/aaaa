@@ -2,49 +2,40 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/OneWork"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OneWork">
+    tools:context=".fiveClass">
 
     <TextView
-        android:id="@+id/oneWorkText"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="205dp"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="206dp"
-        android:text="@string/oneWork"
-        android:textColor="#2196F3"
-        android:textSize="19dp"
-        android:textStyle="bold"
+        android:layout_marginTop="76dp"
+        android:text="Отжимания от колен "
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/oneWarkGif"
+        android:id="@+id/gifImageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="184dp"
-        android:layout_marginEnd="27dp"
-        android:src="@drawable/fff"
+        android:layout_marginTop="112dp"
+        android:src="@drawable/fffffff"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="onClick"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/oneWarkGif" />
-
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView4"
+        app:layout_constraintVertical_bias="0.457" />
 </androidx.constraintlayout.widget.ConstraintLayout>
