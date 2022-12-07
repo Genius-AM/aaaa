@@ -1,12 +1,9 @@
 package com.example.aaaa
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
-import android.view.View
 import com.example.aaaa.databinding.ActivityOneWorkBinding
-import android.content.Intent as Intent
 
 class OneWork : AppCompatActivity() {
     private lateinit var binding: ActivityOneWorkBinding
@@ -17,11 +14,24 @@ class OneWork : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityOneWorkBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.apply {
+            bStart.setOnClickListener {
+                onClick()
+            }
+        }
     }
 
-    fun onClick(view: View) {
-        val intent = Intent(this, TwoWork::class.java)
-        startActivity(intent)
+    private fun onClick() {
+        timer?.cancel()
+        object : CountDownTimer(3, 1) {
+            override fun onTick(remaining: Long) {
+                binding.tvTimer.text = remaining.toString()
 
+            }
+
+            override fun onFinish() {
+                setContentView(R.layout.activity_two_work)
+            }
+        }.start()
     }
 }
