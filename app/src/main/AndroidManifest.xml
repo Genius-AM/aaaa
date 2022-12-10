@@ -13,6 +13,20 @@
         android:theme="@style/Theme.Aaaa"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivityEnth"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivitySeven"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activSix"
             android:exported="false">
             <meta-data

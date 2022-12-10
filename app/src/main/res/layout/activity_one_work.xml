@@ -25,6 +25,7 @@
         android:layout_width="176dp"
         android:layout_height="48dp"
         android:text="Начать"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -43,18 +44,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/tvTimer"
-        android:layout_width="102dp"
-        android:layout_height="45dp"
-        android:text="0000"
-        android:textSize="34dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/bStart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/oneWarkGif"
-        app:layout_constraintVertical_bias="0.437" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

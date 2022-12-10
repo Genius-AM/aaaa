@@ -14,7 +14,6 @@ class ThreWork : AppCompatActivity() {
     fun onClickThre(view: View) {
         val intent = Intent(this, MainActivityFore::class.java)
         startActivity(intent)
-
     }
 
 }

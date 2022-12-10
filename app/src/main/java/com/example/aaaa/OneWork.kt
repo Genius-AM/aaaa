@@ -1,5 +1,6 @@
 package com.example.aaaa
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -21,17 +22,8 @@ class OneWork : AppCompatActivity() {
         }
     }
 
-    private fun onClick() {
-        timer?.cancel()
-        object : CountDownTimer(3, 1) {
-            override fun onTick(remaining: Long) {
-                binding.tvTimer.text = remaining.toString()
-
-            }
-
-            override fun onFinish() {
-                setContentView(R.layout.activity_two_work)
-            }
-        }.start()
+     fun onClick() {
+        var intent = Intent(this, TwoWork::class.java)
+         startActivity(intent);
     }
 }
