@@ -32,9 +32,9 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Дальше"
+        android:layout_width="176dp"
+        android:layout_height="48dp"
+        android:text="@string/next_exam"
         android:onClick="onClickSeven"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

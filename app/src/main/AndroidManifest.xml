@@ -57,7 +57,7 @@
         <activity
             android:name=".TwoWork"
             android:exported="false"
-            android:label="@string/title_activity_two_work">
+            android:label="@string/title_activity_one_work">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
